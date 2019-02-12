@@ -7,6 +7,7 @@ alias nina='ssh -X -Y baird@nina.atmos.ucla.edu'
 alias snow='ssh -X -Y baird@snow.atmos.ucla.edu'
 alias chione='ssh -X -Y baird@chione.atmos.ucla.edu'
 alias dn-baird='ssh -X -Y baird@dn-baird.atmos.ucla.edu'
+alias mercury='ssh -X -Y baird@mercury.atmos.ucla.edu'
 
 alias yellowstone='ssh -X -Y baird@yellowstone.ucar.edu'
 alias cheyenne='ssh -X -Y baird@cheyenne.ucar.edu'
