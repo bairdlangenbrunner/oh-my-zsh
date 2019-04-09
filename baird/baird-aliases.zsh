@@ -58,7 +58,15 @@ ninatunnel() {
 #  ssh -L localhost:$1:localhost:$1 baird@oceanus.atmos.ucla.edu
 #}
 
-export PATH="/usr/local/bin:$PATH"
+cheyenne-jupyter-lab() {
+  ssh -N -L $PORTNUMBER:$HOSTNAME:$PORTNUMBER -L $PORTNUMBER:$HOSTNAME:$PORTNUMBER baird@cheyenne.ucar.edu
+}
+
+cheyenne-dask-dashboard() {
+  ssh -N -L 8787:$HOSTNAME:8787 -L 8888:$HOSTNAME:8888 baird@cheyenne.ucar.edu
+}
+
+#export PATH="/usr/local/bin:$PATH"
 
 alias gp1='ssh -Y blangenb@gplogin1.ps.uci.edu'
 alias gp2='ssh -Y blangenb@gplogin2.ps.uci.edu'
